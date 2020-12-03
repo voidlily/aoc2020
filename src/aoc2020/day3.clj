@@ -1,6 +1,5 @@
 (ns aoc2020.day3
-  (:gen-class)
-  (:require [clojure.string :as str]))
+  (:gen-class))
 
 (defn get-rem [x idx]
   (let [x-len (count x)
