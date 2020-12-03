@@ -1,9 +1,10 @@
 (ns aoc2020.day3
   (:gen-class))
 
+;; this function emulates python's looping index behavior
 (defn get-rem [x idx]
   (let [x-len (count x)
-        actual-idx (rem idx x-len)]
+        actual-idx (mod idx x-len)]
     (get x actual-idx)))
 
 (defn is-tree [row idx]
