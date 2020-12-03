@@ -3,9 +3,9 @@
   (:require [clojure.string :as str]))
 
 (defn xor [a b]
-  (and
-   (or a b)
-   (not (and a b))))
+  ;; did you know logical (a xor b) is the same as !=? don't believe me? do the
+  ;; truth table
+  (not= a b))
 
 (def PASSWORD_POLICY_REGEX #"^(\d+)-(\d+) (.): (.*)$")
 
