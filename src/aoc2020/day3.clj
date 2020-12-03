@@ -32,8 +32,7 @@
 (defn part2 [path]
   (with-open [reader (clojure.java.io/reader path)]
     (let [rows (->> reader
-                   line-seq
-                   )]
+                    line-seq)]
       (*
        (num-trees 1 1 rows)
        (num-trees 3 1 rows)
